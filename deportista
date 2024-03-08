@@ -1,0 +1,41 @@
+public class Persona {
+    private String nombre;
+    private int edad;
+
+    public Persona(String nombre, int edad) {
+        this.nombre = nombre;
+        this.edad = edad;
+    }
+
+    public void establecerNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String obtenerNombre() {
+        return this.nombre;
+    }
+
+    public void establecerEdad(int edad) {
+        this.edad = edad;
+    }
+
+    public int obtenerEdad() {
+        return this.edad;
+    }
+}
+public class Deportista extends Persona {
+    private String deporte;
+
+    public Deportista(String nombre, int edad, String deporte) {
+        super(nombre, edad);
+        this.deporte = deporte;
+    }
+
+    public void establecerDeporte(String deporte) {
+        this.deporte = deporte;
+    }
+
+    public String obtenerDeporte() {
+        return this.deporte;
+    }
+}
